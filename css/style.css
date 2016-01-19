@@ -1,0 +1,106 @@
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #2E37FE;
+  font-weight: bolder; }
+  a:hover {
+    color: #7A80FE; }
+
+body {
+  background-color: #eaeaea; }
+  body.transitioning #body-container, body.transitioning #main-picture, body.transitioning #name-intro {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  body.body-initial {
+    overflow: hidden; }
+    body.body-initial #name-intro {
+      line-height: 100vh; }
+    body.body-initial #body-container {
+      margin-top: 100vh;
+      opacity: 0; }
+    body.body-initial #main-picture {
+      top: 100vh; }
+
+#information {
+  background-color: #fafafa;
+  border: black 2px solid;
+  margin: auto;
+  margin-top: 100px;
+  padding: 2.5%;
+  padding-top: 100px;
+  width: 700px; }
+  @media (max-width: 933.33333px) {
+    #information {
+      width: 75%; } }
+  @media (max-width: 480px) {
+    #information {
+      padding-top: 62.5px;
+      margin-top: 75px;
+      width: 90%; } }
+
+#main-picture {
+  background-color: #fafafa;
+  border-radius: 100%;
+  border: 2px solid black;
+  margin: auto;
+  padding: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  height: 200px;
+  width: 200px; }
+  #main-picture img {
+    border-radius: 100%;
+    height: 100%;
+    width: 100%; }
+  @media (max-width: 480px) {
+    #main-picture {
+      height: 125px;
+      width: 125px;
+      top: 88px; } }
+
+#name-intro {
+  height: 100px;
+  line-height: 100px;
+  font-family: 'Bad Script', cursive;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  letter-spacing: 1.5px; }
+  @media (max-width: 480px) {
+    #name-intro {
+      font-size: 1.75em;
+      letter-spacing: initial;
+      height: 75px;
+      line-height: 75px; } }
+
+#social-links {
+  margin-top: 37.5px;
+  text-align: center; }
+  #social-links .social-link {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: auto 10px; }
+    #social-links .social-link:hover {
+      opacity: .5; }
+  #social-links #twitter-link {
+    background: url("../img/twitter.png");
+    background-size: contain; }
+  #social-links #linkedin-link {
+    background: url("../img/linkedin.png");
+    background-size: contain; }
+  #social-links #instagram-link {
+    background: url("../img/instagram.png");
+    background-size: contain; }
+  #social-links #github-link {
+    background: url("../img/github.png");
+    background-size: contain; }
+
+/*# sourceMappingURL=style.css.map */
